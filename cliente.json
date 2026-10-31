@@ -1,0 +1,907 @@
+{
+ "$schema": "https://raw.githubusercontent.com/AlejoMFernandez/kit-demos/main/docs/cliente.schema.json",
+ "id": "lombardi-vermuteria",
+ "nombre": "Lombardi Vermutería",
+ "pais": "AR",
+ "idioma": "es",
+ "modo": "demo",
+ "whatsapp": "5491161071161",
+ "instagram": "lombardi.vermuteria",
+ "prefijoPedido": "LMB",
+ "supabase": {
+  "url": "",
+  "anonKey": ""
+ },
+ "marca": {
+  "logo": "img/logo-tinta.svg",
+  "logoPanel": "img/logo-crema.svg",
+  "logoClaro": "img/logo-crema.svg",
+  "favicon": "img/favicon.png",
+  "isotipo": "",
+  "colores": {
+   "fondo": "#EFEAE2",
+   "superficie": "#F7F3EC",
+   "texto": "#1C1A17",
+   "primario": "#9B1F2A",
+   "acento": "#2D4F9E",
+   "borde": "#1C1A17"
+  },
+  "fuentes": {
+   "titulos": "'Fraunces', Georgia, serif",
+   "texto": "'Archivo', system-ui, sans-serif",
+   "googleFonts": ""
+  },
+  "estilo": {
+   "forma": "recta",
+   "sombra": "suave",
+   "borde": "1.5px",
+   "mayusculas": false
+  }
+ },
+ "modulos": {
+  "carta": true,
+  "carrito": false,
+  "reservas": true,
+  "admin": true,
+  "cartaQR": true
+ },
+ "horarios": {
+  "lun": [
+   [
+    "18:00",
+    "00:00"
+   ]
+  ],
+  "mar": [
+   [
+    "18:00",
+    "00:00"
+   ]
+  ],
+  "mie": [
+   [
+    "18:00",
+    "00:00"
+   ]
+  ],
+  "jue": [
+   [
+    "18:00",
+    "00:00"
+   ]
+  ],
+  "vie": [
+   [
+    "18:00",
+    "01:00"
+   ]
+  ],
+  "sab": [
+   [
+    "18:00",
+    "01:00"
+   ]
+  ],
+  "dom": []
+ },
+ "reservas": {
+  "capacidad": 40,
+  "maxPersonas": 20,
+  "anticipacionMin": 120,
+  "diasAdelante": 30,
+  "cerrados": [],
+  "servicios": [
+   {
+    "id": "grupos",
+    "nombre": "Mesa para grupos",
+    "minPersonas": 8,
+    "dias": [
+     "lun",
+     "mar",
+     "mie",
+     "jue"
+    ],
+    "tandas": [
+     {
+      "nombre": "Grupos de 8 o más · lunes a jueves",
+      "turnos": [
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30"
+      ],
+      "capacidad": 24
+     }
+    ]
+   },
+   {
+    "id": "partido",
+    "nombre": "Partido de la Selección",
+    "fechas": [
+     "2026-11-13",
+     "2026-11-17"
+    ],
+    "tandas": [
+     {
+      "nombre": "Noche de partido · pantalla gigante",
+      "turnos": [
+       "20:00",
+       "20:30",
+       "21:00"
+      ],
+      "capacidad": 40
+     }
+    ]
+   }
+  ],
+  "extras": [
+   {
+    "id": "cumple",
+    "label": "Venimos a festejar un cumple"
+   }
+  ]
+ },
+ "pedidos": {
+  "salidas": [
+   "whatsapp"
+  ],
+  "tipos": [
+   "retiro"
+  ],
+  "envio": 0,
+  "minimo": 0
+ },
+ "pagos": {
+  "mercadopago": {
+   "endpoint": "https://kit-demos-amf.vercel.app/api/mp-preference",
+   "modo": "sandbox"
+  }
+ },
+ "destacados": [
+  {
+   "id": "promo",
+   "nombre": "Promo del lunes",
+   "ayuda": "El vermú que está en promo este lunes. Aparece en La semana.",
+   "campos": [
+    {
+     "id": "vermu",
+     "label": "Vermú en promo"
+    },
+    {
+     "id": "detalle",
+     "label": "Detalle",
+     "largo": true
+    }
+   ],
+   "valores": {
+    "vermu": "Feriado rojo y rosado",
+    "detalle": "Todos los lunes, una promo distinta de vermú."
+   }
+  },
+  {
+   "id": "evento",
+   "nombre": "Próximo evento",
+   "ayuda": "El evento que aparece primero en la Agenda.",
+   "campos": [
+    {
+     "id": "titulo",
+     "label": "Título"
+    },
+    {
+     "id": "cuando",
+     "label": "Cuándo"
+    },
+    {
+     "id": "detalle",
+     "label": "Detalle",
+     "largo": true
+    }
+   ],
+   "valores": {
+    "titulo": "Argentina vs. Uruguay",
+    "cuando": "Viernes 13 de noviembre",
+    "detalle": "Pantalla gigante, vermú, tapeos y promociones. Reservá tu mesa para el partido."
+   }
+  }
+ ],
+ "cartaQR": {
+  "estilo": "marca",
+  "textos": {
+   "titulo": "Nuestra carta"
+  }
+ },
+ "carta": {
+  "categorias": [
+   {
+    "id": "frios",
+    "nombre": "Platitos fríos",
+    "descripcion": "Acompañados con pan (opción sin TACC: chips de arroz)."
+   },
+   {
+    "id": "calientes",
+    "nombre": "Platitos calientes"
+   },
+   {
+    "id": "postres",
+    "nombre": "Postres y panera"
+   },
+   {
+    "id": "vermu",
+    "nombre": "Vermú con soda"
+   },
+   {
+    "id": "aperitivos",
+    "nombre": "Aperitivos"
+   },
+   {
+    "id": "cerveza",
+    "nombre": "Cerveza"
+   },
+   {
+    "id": "sinalcohol",
+    "nombre": "Sin alcohol"
+   },
+   {
+    "id": "espumosos",
+    "nombre": "Espumosos"
+   },
+   {
+    "id": "blancos",
+    "nombre": "Blancos"
+   },
+   {
+    "id": "naranjos",
+    "nombre": "Naranjos"
+   },
+   {
+    "id": "rosados",
+    "nombre": "Rosados"
+   },
+   {
+    "id": "tintos-ligeros",
+    "nombre": "Tintos ligeros"
+   },
+   {
+    "id": "tintos",
+    "nombre": "Tintos"
+   }
+  ],
+  "productos": [
+   {
+    "id": "tapeo-criollo",
+    "categoria": "frios",
+    "nombre": "Tapeo criollo",
+    "descripcion": "Tapa de asado ahumada y bondiola serrana Las Dinas (Tandil), queso reggianito, berenjenas, morrones asados y aceitunas mixtas.",
+    "precio": 32000,
+    "foto": "",
+    "etiquetas": [
+     "sintacc"
+    ]
+   },
+   {
+    "id": "tapeo-vermutero",
+    "categoria": "frios",
+    "nombre": "Tapeo vermutero",
+    "descripcion": "Jamón crudo reserva y salamín picado fino Las Dinas (Tandil), queso pategrás, berenjenas, morrones asados y aceitunas mixtas.",
+    "precio": 32000,
+    "foto": "img/p-tapeo-640.webp",
+    "etiquetas": [
+     "sintacc"
+    ]
+   },
+   {
+    "id": "tabla-quesos",
+    "categoria": "frios",
+    "nombre": "Tabla de 4 quesos",
+    "descripcion": "Brie, roquefort, reggianito y pategrás con hummus de garbanzos y frutos secos.",
+    "precio": 28000,
+    "foto": "img/p-quesos-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "mix-conservas",
+    "categoria": "frios",
+    "nombre": "Mix de conservas",
+    "descripcion": "3 gustos a elección: berenjenas, morrones asados, pickles, pepinillos, aceitunas verdes descarozadas o aceitunas negras.",
+    "precio": 16000,
+    "foto": "img/p-conservas-640.webp",
+    "etiquetas": [
+     "sintacc"
+    ]
+   },
+   {
+    "id": "racion-jamon",
+    "categoria": "frios",
+    "nombre": "Ración de jamón crudo",
+    "descripcion": "",
+    "precio": 18000,
+    "foto": "img/p-jamon-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "racion-queso",
+    "categoria": "frios",
+    "nombre": "Ración de reggianito o roquefort",
+    "descripcion": "",
+    "precio": 16500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "hummus",
+    "categoria": "frios",
+    "nombre": "Hummus de garbanzos",
+    "descripcion": "",
+    "precio": 12000,
+    "foto": "",
+    "etiquetas": [
+     "vegano"
+    ]
+   },
+   {
+    "id": "croquetas",
+    "categoria": "calientes",
+    "nombre": "Croquetas de jamón serrano",
+    "descripcion": "Acompañadas con salsa brava.",
+    "precio": 16000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "olivas",
+    "categoria": "calientes",
+    "nombre": "Olivas alla ascolana",
+    "descripcion": "Aceitunas fritas apanadas rellenas de provolone.",
+    "precio": 12000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "tortilla",
+    "categoria": "calientes",
+    "nombre": "Tortilla de papa",
+    "descripcion": "Acompañada con alioli.",
+    "precio": 16500,
+    "foto": "img/p-tortilla-640.webp",
+    "etiquetas": [
+     "casa"
+    ]
+   },
+   {
+    "id": "gambas",
+    "categoria": "calientes",
+    "nombre": "Gambas al ajillo",
+    "descripcion": "Con pimentón español.",
+    "precio": 21000,
+    "foto": "",
+    "etiquetas": [
+     "sintacc"
+    ]
+   },
+   {
+    "id": "albondiguitas",
+    "categoria": "calientes",
+    "nombre": "Albondiguitas rellenas",
+    "descripcion": "Con centro de sardo y la salsa secreta de la abuela.",
+    "precio": 16000,
+    "foto": "img/p-albondigas-640.webp",
+    "etiquetas": [
+     "casa"
+    ]
+   },
+   {
+    "id": "provoleta",
+    "categoria": "calientes",
+    "nombre": "Provoleta Lombardi",
+    "descripcion": "Con tomates confitados y pesto genovés.",
+    "precio": 16000,
+    "foto": "img/p-provoleta-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "faina",
+    "categoria": "calientes",
+    "nombre": "Fainá Castelvetere",
+    "descripcion": "Burrata, almendras y tomates secos.",
+    "precio": 11500,
+    "foto": "img/p-faina-640.webp",
+    "etiquetas": [
+     "casa"
+    ]
+   },
+   {
+    "id": "huevos-estrellados",
+    "categoria": "calientes",
+    "nombre": "Huevos estrellados",
+    "descripcion": "Papas al horno con jamón crudo y huevos rotos.",
+    "precio": 18000,
+    "foto": "img/p-huevos-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "huevos-veggie",
+    "categoria": "calientes",
+    "nombre": "Huevos veggie",
+    "descripcion": "Papas al horno, portobellos salteados con pesto y huevos rotos.",
+    "precio": 18000,
+    "foto": "",
+    "etiquetas": [
+     "veggie"
+    ]
+   },
+   {
+    "id": "mousse",
+    "categoria": "postres",
+    "nombre": "Mousse de chocolate con crema",
+    "descripcion": "",
+    "precio": 10500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "flan",
+    "categoria": "postres",
+    "nombre": "Flan con crema y dulce de leche",
+    "descripcion": "",
+    "precio": 9500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "tiramisu",
+    "categoria": "postres",
+    "nombre": "Tiramisú italiano",
+    "descripcion": "",
+    "precio": 12000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "volcan",
+    "categoria": "postres",
+    "nombre": "Volcán de chocolate con helado de americana",
+    "descripcion": "",
+    "precio": 15000,
+    "foto": "img/p-volcan-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "panera",
+    "categoria": "postres",
+    "nombre": "Panera o chips de arroz",
+    "descripcion": "Para acompañar los platitos.",
+    "precio": 2000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "feriado-rojo",
+    "categoria": "vermu",
+    "nombre": "Feriado rojo",
+    "descripcion": "Con soda.",
+    "precio": 7200,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "feriado-rosado",
+    "categoria": "vermu",
+    "nombre": "Feriado rosado",
+    "descripcion": "Con soda.",
+    "precio": 7200,
+    "foto": "img/p-feriado-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "cinzano-segundo",
+    "categoria": "vermu",
+    "nombre": "Cinzano Segundo rojo",
+    "descripcion": "Con soda.",
+    "precio": 7200,
+    "foto": "img/p-cinzano-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "carpano",
+    "categoria": "vermu",
+    "nombre": "Carpano Rosso",
+    "descripcion": "Con soda.",
+    "precio": 7200,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "lunfa-rosso",
+    "categoria": "vermu",
+    "nombre": "Lunfa Rosso",
+    "descripcion": "Con soda.",
+    "precio": 7500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "lunfa-rosado",
+    "categoria": "vermu",
+    "nombre": "Lunfa Rosado",
+    "descripcion": "Con soda.",
+    "precio": 7500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "lafuerza-rojo",
+    "categoria": "vermu",
+    "nombre": "La Fuerza rojo",
+    "descripcion": "Con soda.",
+    "precio": 8200,
+    "foto": "img/p-lafuerza-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "lafuerza-blanco",
+    "categoria": "vermu",
+    "nombre": "La Fuerza blanco",
+    "descripcion": "Con soda.",
+    "precio": 8200,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "lafuerza-primavera",
+    "categoria": "vermu",
+    "nombre": "La Fuerza primavera",
+    "descripcion": "Con soda.",
+    "precio": 8200,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "vincenzo",
+    "categoria": "vermu",
+    "nombre": "Vincenzo Rosso Catena Zapata",
+    "descripcion": "Con soda.",
+    "precio": 11500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "aperol",
+    "categoria": "aperitivos",
+    "nombre": "Aperol Spritz",
+    "descripcion": "",
+    "precio": 9500,
+    "foto": "img/p-aperol-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "gin-heraclito",
+    "categoria": "aperitivos",
+    "nombre": "Gin tonic Heraclito",
+    "descripcion": "",
+    "precio": 8500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "gin-ginkgo",
+    "categoria": "aperitivos",
+    "nombre": "Gin tonic Ginkgo Patagonia",
+    "descripcion": "",
+    "precio": 9500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "pinky",
+    "categoria": "aperitivos",
+    "nombre": "Pinky Tonic",
+    "descripcion": "",
+    "precio": 9500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "negroni",
+    "categoria": "aperitivos",
+    "nombre": "Negroni",
+    "descripcion": "",
+    "precio": 8500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "campari",
+    "categoria": "aperitivos",
+    "nombre": "Campari con naranja",
+    "descripcion": "",
+    "precio": 9000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "cynar",
+    "categoria": "aperitivos",
+    "nombre": "Cynar con pomelo",
+    "descripcion": "",
+    "precio": 8500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "fernet",
+    "categoria": "aperitivos",
+    "nombre": "Fernet Branca con coca",
+    "descripcion": "",
+    "precio": 9000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "ferroviario",
+    "categoria": "aperitivos",
+    "nombre": "Ferroviario",
+    "descripcion": "",
+    "precio": 8500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "tinto-verano",
+    "categoria": "aperitivos",
+    "nombre": "Tinto de verano",
+    "descripcion": "",
+    "precio": 7500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "federal-ipa",
+    "categoria": "cerveza",
+    "nombre": "Federal IPA",
+    "descripcion": "",
+    "precio": 7500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "federal-scottish",
+    "categoria": "cerveza",
+    "nombre": "Federal Scottish",
+    "descripcion": "",
+    "precio": 7500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "federal-lager",
+    "categoria": "cerveza",
+    "nombre": "Federal Lager",
+    "descripcion": "",
+    "precio": 7500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "federal-porter",
+    "categoria": "cerveza",
+    "nombre": "Federal Porter",
+    "descripcion": "",
+    "precio": 7500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "sin-alcohol",
+    "categoria": "cerveza",
+    "nombre": "Cerveza sin alcohol",
+    "descripcion": "",
+    "precio": 7500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "gaseosa",
+    "categoria": "sinalcohol",
+    "nombre": "Gaseosa línea Pepsi (lata)",
+    "descripcion": "",
+    "precio": 4200,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "agua",
+    "categoria": "sinalcohol",
+    "nombre": "Agua sin gas",
+    "descripcion": "",
+    "precio": 4000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "sifon",
+    "categoria": "sinalcohol",
+    "nombre": "Sifón de soda",
+    "descripcion": "",
+    "precio": 4000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "saint-felicien",
+    "categoria": "espumosos",
+    "nombre": "Saint Felicien Brut Nature",
+    "descripcion": "Bodega Catena Zapata · Luján de Cuyo, Mendoza",
+    "precio": 32500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "jijiji",
+    "categoria": "blancos",
+    "nombre": "Jijiji Chenin Blanc",
+    "descripcion": "Gen del Alma · Tunuyán, Valle de Uco, Mendoza",
+    "precio": 25000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "tilia-chardonnay",
+    "categoria": "blancos",
+    "nombre": "Tilia Chardonnay orgánico",
+    "descripcion": "Bodega Catena Zapata · Luján de Cuyo, Mendoza",
+    "precio": null,
+    "foto": "",
+    "etiquetas": [],
+    "variantes": [
+     {
+      "id": "copa",
+      "nombre": "Copa",
+      "precio": 6500
+     },
+     {
+      "id": "botella",
+      "nombre": "Botella",
+      "precio": 26000
+     }
+    ]
+   },
+   {
+    "id": "turbio",
+    "categoria": "blancos",
+    "nombre": "Turbio Sauvignon Blanc",
+    "descripcion": "Ravera Wines · La Carrera, Tupungato, Mendoza",
+    "precio": 34000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "psico-naranjo",
+    "categoria": "naranjos",
+    "nombre": "El Psicoanalista Naranjo",
+    "descripcion": "El Psicoanalista Wines · Tupungato, Mendoza",
+    "precio": null,
+    "foto": "",
+    "etiquetas": [],
+    "variantes": [
+     {
+      "id": "copa",
+      "nombre": "Copa",
+      "precio": 7800
+     },
+     {
+      "id": "botella",
+      "nombre": "Botella",
+      "precio": 31000
+     }
+    ]
+   },
+   {
+    "id": "hormigas-rosa",
+    "categoria": "rosados",
+    "nombre": "Altos Las Hormigas Rosa",
+    "descripcion": "Bodega Altos Las Hormigas · Valle de Uco, Mendoza",
+    "precio": 24000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "marchigiana-rose",
+    "categoria": "rosados",
+    "nombre": "La Marchigiana Rosé",
+    "descripcion": "Bodega Catena Zapata · Luján de Cuyo, Mendoza",
+    "precio": 26500,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "marchigiana-criolla",
+    "categoria": "tintos-ligeros",
+    "nombre": "La Marchigiana Criolla",
+    "descripcion": "Bodega Catena Zapata · Luján de Cuyo, Mendoza",
+    "precio": 26500,
+    "foto": "img/p-marchigiana-640.webp",
+    "etiquetas": []
+   },
+   {
+    "id": "primogenito",
+    "categoria": "tintos-ligeros",
+    "nombre": "Primogénito Pinot Noir",
+    "descripcion": "Bodega Patritti · San Patricio del Chañar, Neuquén",
+    "precio": 28000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "hormigas-malbec",
+    "categoria": "tintos",
+    "nombre": "Altos Las Hormigas Terroir Malbec",
+    "descripcion": "Bodega Altos Las Hormigas · Valle de Uco, Mendoza",
+    "precio": null,
+    "foto": "",
+    "etiquetas": [],
+    "variantes": [
+     {
+      "id": "copa",
+      "nombre": "Copa",
+      "precio": 6000
+     },
+     {
+      "id": "botella",
+      "nombre": "Botella",
+      "precio": 24000
+     }
+    ]
+   },
+   {
+    "id": "psico-blend",
+    "categoria": "tintos",
+    "nombre": "El Psicoanalista Blend de tintas",
+    "descripcion": "El Psicoanalista Wines · Tupungato, Mendoza",
+    "precio": 28000,
+    "foto": "",
+    "etiquetas": []
+   },
+   {
+    "id": "nido-tigre",
+    "categoria": "tintos",
+    "nombre": "Nido del Tigre Cabernet Franc",
+    "descripcion": "Bodega del Carmen · Valle de Calingasta, San Juan",
+    "precio": null,
+    "foto": "img/p-nido-640.webp",
+    "etiquetas": [],
+    "variantes": [
+     {
+      "id": "copa",
+      "nombre": "Copa",
+      "precio": 9600
+     },
+     {
+      "id": "botella",
+      "nombre": "Botella",
+      "precio": 38500
+     }
+    ]
+   },
+   {
+    "id": "ambrosia",
+    "categoria": "tintos",
+    "nombre": "Finca Ambrosía Casa Cabernet Sauvignon",
+    "descripcion": "Finca Ambrosía · Valle de Uco, Mendoza",
+    "precio": 29500,
+    "foto": "",
+    "etiquetas": []
+   }
+  ]
+ },
+ "textos": {
+  "reservarMesa": "Reservá tu mesa",
+  "confirmarReserva": "Pedir la mesa",
+  "reservaLista": "¡Mesa pedida!",
+  "reservaListaSub": "{personas} · {dia} a las {hora} hs. Te confirmamos por WhatsApp.",
+  "waReserva": "Hola Lombardi! Pedí una mesa para {personas} el {dia} a las {hora} hs. A nombre de {nombre}."
+ },
+ "etiquetas": {
+  "sintacc": "Sin TACC",
+  "vegano": "Vegano"
+ }
+}

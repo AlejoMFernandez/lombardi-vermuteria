@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lombardi Vermutería · Vermú y tapas en Villa Urquiza</title>
+<meta property="og:image" content="https://lombardi-vermuteria.vercel.app/img/og.jpg?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Lombardi Vermutería: la carta de la abuela, ahora a un toque">
+<meta property="og:url" content="https://lombardi-vermuteria.vercel.app/">
+<meta property="og:title" content="Lombardi Vermutería · Vermú y tapas en Villa Urquiza">
+<meta property="og:description" content="La carta de platitos, vermús y vinos por copa, siempre actualizada. Av. Triunvirato 3901.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lombardi Vermutería">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lombardi-vermuteria.vercel.app/img/og.jpg?v=1">
+<meta name="description" content="Vermutería y bar de tapas en Villa Urquiza, homenaje al almacén de la abuela María. Vermú con soda, platitos para compartir y vinos por copa. Av. Triunvirato 3901.">
+<meta name="theme-color" content="#1E3524">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<script>
+  // Intro: la clase va antes de pintar para que no haya parpadeo. Sin JS o con reduced-motion no hay intro.
+  (function(){var d=document.documentElement;d.classList.add('js');try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!/[?&]sinintro/.test(location.search))d.classList.add('con-intro')}catch(e){}})();
+</script>
+<link rel="preload" href="fonts/fraunces-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-vermu-900.webp" imagesrcset="img/hero-vermu-640.webp 640w, img/hero-vermu-900.webp 900w, img/hero-vermu-1350.webp 1350w" imagesizes="(min-width:1100px) 34vw, 100vw" fetchpriority="high">
+<link rel="stylesheet" href="css/fonts.css?v=1" data-kit-fonts>
+<link rel="stylesheet" href="kit/kit.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__toldo"><span class="intro__ondas"></span></div>
+  <div class="intro__placa">
+    <svg class="intro__marco" viewBox="0 0 600 260" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M52 14 H548 A40 40 0 0 0 588 54 V206 A40 40 0 0 0 548 246 H52 A40 40 0 0 0 12 206 V54 A40 40 0 0 0 52 14 Z"/></svg>
+    <span class="intro__rot">Vermutería</span>
+    <span class="intro__logo"><img src="img/logo-tinta.svg" alt="" width="1080" height="240"></span>
+    <span class="intro__rot">Bar de tapas y vinos</span>
+  </div>
+</div>
+
+<header class="barra" id="barra">
+  <div class="barra__toldo" aria-hidden="true"></div>
+  <div class="barra__in">
+    <a class="barra__logo" href="#inicio" aria-label="Lombardi, ir al inicio"><img src="img/logo-crema.svg" alt="Lombardi" width="1080" height="240"></a>
+    <nav class="barra__nav" aria-label="Secciones">
+      <a href="#semana">La semana</a>
+      <a href="#historia">La historia</a>
+      <a href="#carta">Carta</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#llegar">Cómo llegar</a>
+    </nav>
+    <a class="btn btn--vermu barra__cta" href="#carta">Ver la carta</a>
+    <button class="barra__burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav class="menu__nav" aria-label="Menú">
+    <a href="#semana">La semana</a>
+    <a href="#historia">La historia</a>
+    <a href="#carta">La carta</a>
+    <a href="#vermu">Armá tu vermú</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#llegar">Cómo llegar</a>
+  </nav>
+  <div class="menu__pie">
+    <p class="menu__estado" data-estado>Lun a jue 18:00 a 00:00 hs · vie y sáb 18:00 a 01:00 hs</p>
+    <a class="btn btn--crema" href="https://wa.me/5491161071161" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero__in">
+    <div class="hero__texto">
+      <img class="hero__logo" src="img/logo-crema.svg" alt="Lombardi" width="1080" height="240">
+      <p class="rotulo hero__rot sube" style="--d:1">Vermutería · Bar de tapas y vinos</p>
+      <h1 class="hero__tit"><span class="linea"><span>El almacén de la abuela,</span></span> <span class="linea"><span><i>servido en copas.</i></span></span></h1>
+      <p class="hero__bajada sube" style="--d:4">Un homenaje a la abuela María, que llegó de <span class="solo-cel">Italia</span><span class="solo-desk">Castelvétere in Val Fortore</span> en 1954<span class="solo-desk"> y atendió su despensa durante más de 30 años</span>. Av. Triunvirato 3901, Villa Urquiza.</p>
+      <p class="hero__hoy sube" style="--d:5"><span class="punto" data-punto></span><span data-hoy>Lun a sáb desde las 18:00 hs · sin reservas</span></p>
+      <div class="hero__ctas sube" style="--d:6">
+        <a class="btn btn--vermu btn--big" href="#carta">Ver la carta</a>
+        <a class="btn btn--linea-crema btn--big" href="#historia">La historia</a>
+      </div>
+    </div>
+    <div class="hero__fotos">
+      <figure class="hero__f hero__f--1"><img src="img/hero-vermu-900.webp" srcset="img/hero-vermu-640.webp 640w, img/hero-vermu-900.webp 900w, img/hero-vermu-1350.webp 1350w" sizes="(min-width:1100px) 34vw, 100vw" alt="Vaso de vermú La Fuerza con soda, naranja y aceituna, junto a su botella" width="1350" height="1688" fetchpriority="high" decoding="async"></figure>
+      <figure class="hero__f hero__f--2"><img src="img/hero-huevos-640.webp" srcset="img/hero-huevos-640.webp 640w, img/hero-huevos-1000.webp 1000w" sizes="24vw" alt="Huevos estrellados con jamón crudo y pimentón" width="1000" height="1250" decoding="async"></figure>
+      <figure class="hero__f hero__f--3"><img src="img/hero-tapeo-640.webp" srcset="img/hero-tapeo-640.webp 640w, img/hero-tapeo-1000.webp 1000w" sizes="24vw" alt="Tapeo vermutero con jamón crudo, salamín y quesos" width="1000" height="1000" decoding="async"></figure>
+    </div>
+  </div>
+  <a class="hero__baja" href="#semana" aria-label="Bajar a La semana"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+</section>
+
+<!-- LA SEMANA -->
+<section class="sec semana" id="semana" aria-labelledby="t-semana">
+  <div class="cont">
+    <header class="sec__cab">
+      <p class="rotulo rotulo--toldo aparece">Lunes a sábado desde las 18:00 hs</p>
+      <h2 class="tit aparece" id="t-semana">6 noches, <i>6 planes</i></h2>
+      <p class="sec__bajada aparece">Cada noche tiene lo suyo. El de hoy está resaltado.</p>
+    </header>
+    <div class="pizarra aparece" data-pizarra>
+      <article class="dia" data-dia="lun" tabindex="0">
+        <span class="dia__n">Lun</span>
+        <h3 class="dia__p">Promo de vermú</h3>
+        <p class="dia__d">Todos los lunes, una promo distinta. Esta semana: <b data-kit-destacado="promo.vermu">Feriado rojo y rosado</b>.</p>
+        <figure class="dia__f"><img src="img/sem-lun-480.webp" srcset="img/sem-lun-480.webp 480w, img/sem-lun-800.webp 800w" sizes="(min-width:1100px) 18vw, 70vw" alt="Vermú La Fuerza rojo y blanco" width="800" height="1000" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="dia" data-dia="mar" tabindex="0">
+        <span class="dia__n">Mar</span>
+        <h3 class="dia__p">Copas y tapeos</h3>
+        <p class="dia__d">Vinos por copa y tapeos para compartir. Y 2x1 en Aperol hasta las 21:00 hs.</p>
+        <figure class="dia__f"><img src="img/sem-mar-480.webp" srcset="img/sem-mar-480.webp 480w, img/sem-mar-800.webp 800w" sizes="(min-width:1100px) 18vw, 70vw" alt="Copa de vino tinto en la mesa" width="800" height="1000" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="dia" data-dia="mie" tabindex="0">
+        <span class="dia__n">Mié</span>
+        <h3 class="dia__p">Platitos calientes</h3>
+        <p class="dia__d">Tortilla, albondiguitas, gambas al ajillo, huevos estrellados. 2x1 en Aperol hasta las 21:00 hs.</p>
+        <figure class="dia__f"><img src="img/sem-mie-480.webp" srcset="img/sem-mie-480.webp 480w, img/sem-mie-800.webp 800w" sizes="(min-width:1100px) 18vw, 70vw" alt="Huevos estrellados con pimentón en cazuela" width="800" height="1000" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="dia" data-dia="jue" tabindex="0">
+        <span class="dia__n">Jue</span>
+        <h3 class="dia__p">Tu aperitivo favorito</h3>
+        <p class="dia__d">Aperol, negroni, Cynar con pomelo, gin tonic. Para cortar la semana.</p>
+        <figure class="dia__f"><img src="img/sem-jue-480.webp" srcset="img/sem-jue-480.webp 480w, img/sem-jue-800.webp 800w" sizes="(min-width:1100px) 18vw, 70vw" alt="Aperol spritz con la barra de fondo" width="800" height="1000" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="dia dia--doble" data-dia="vie sab" tabindex="0">
+        <span class="dia__n">Vie · Sáb</span>
+        <h3 class="dia__p">Cazuelas</h3>
+        <p class="dia__d">Cazuelas de la casa que cambian cada fin de semana. Abierto hasta la 01:00 hs.</p>
+        <figure class="dia__f"><img src="img/sem-fin-480.webp" srcset="img/sem-fin-480.webp 480w, img/sem-fin-560.webp 560w" sizes="(min-width:1100px) 18vw, 70vw" alt="Cazuela gratinada en plato de loza con guarda azul" width="560" height="560" loading="lazy" decoding="async"></figure>
+      </article>
+    </div>
+    <p class="semana__pie aparece">Domingo cerrado. Sin reservas: vení directo, o reservá para <a href="#agenda">grupos y partidos</a>.</p>
+  </div>
+</section>
+
+<!-- LA HISTORIA -->
+<section class="sec historia" id="historia" aria-labelledby="t-historia">
+  <div class="cont historia__in">
+    <div class="historia__fig" aria-hidden="true">
+      <div class="hfig" data-hfig="0">
+        <div class="hfig__capa hfig__capa--mapa is-on" data-capa="0">
+          <span class="hfig__año">1954</span>
+          <span class="hfig__ruta"><b>Castelvétere in Val Fortore</b><svg viewBox="0 0 220 40"><path d="M6 30 C70 0 150 0 214 26" /><circle cx="6" cy="30" r="5"/><circle cx="214" cy="26" r="5"/></svg><b>Buenos Aires</b></span>
+        </div>
+        <div class="hfig__capa" data-capa="1"><img src="img/p-conservas-640.webp" alt="" width="640" height="800" loading="lazy" decoding="async"></div>
+        <div class="hfig__capa" data-capa="2"><img src="img/cartel-640.webp" alt="" width="640" height="1136" loading="lazy" decoding="async"></div>
+        <div class="hfig__capa" data-capa="3"><img src="img/mesa-carta-720.webp" alt="" width="616" height="700" loading="lazy" decoding="async"></div>
+        <div class="hfig__placa">
+          <span class="hfig__txt is-on" data-placa="0">Italia · Campania</span>
+          <span class="hfig__txt" data-placa="1">Despacho de bebidas y comestibles</span>
+          <span class="hfig__txt hfig__txt--logo" data-placa="2"><img src="img/logo-tinta.svg" alt="" width="1080" height="240"></span>
+          <span class="hfig__txt" data-placa="3">4,8 en Google · 1.100 reseñas</span>
+        </div>
+      </div>
+    </div>
+    <div class="historia__txt">
+      <header class="sec__cab sec__cab--izq">
+        <p class="rotulo aparece">La historia</p>
+        <h2 class="tit aparece" id="t-historia">El cartel de <i>la abuela María</i></h2>
+      </header>
+      <ol class="capitulos">
+        <li class="cap" data-cap="0">
+          <figure class="cap__f cap__f--mapa"><span class="hfig__año">1954</span><span class="cap__ruta">Castelvétere in Val Fortore → Buenos Aires</span></figure>
+          <span class="cap__año">1954</span>
+          <h3>Llega desde Castelvétere</h3>
+          <p>María Lombardi llegó en 1954 desde Castelvétere in Val Fortore, un pueblo de la Campania, en el sur de Italia.</p>
+        </li>
+        <li class="cap" data-cap="1">
+          <figure class="cap__f"><img src="img/p-conservas-640.webp" alt="Conservas de la casa en platitos" width="640" height="800" loading="lazy" decoding="async"></figure>
+          <span class="cap__año">Más de 30 años</span>
+          <h3>La despensa</h3>
+          <p>Durante más de 30 años se dedicó al despacho de bebidas y comestibles en su tradicional despensa, y nos transmitió el valor del esfuerzo y la perseverancia.</p>
+        </li>
+        <li class="cap" data-cap="2">
+          <figure class="cap__f"><img src="img/cartel-640.webp" alt="El cartel de Lombardi sobre el toldo verde de la esquina" width="640" height="1136" loading="lazy" decoding="async"></figure>
+          <span class="cap__año">Octubre 2023</span>
+          <h3>El cartel vuelve a la esquina</h3>
+          <p>Lombardi abre en Triunvirato 3901 como un homenaje: vermutería, bar de tapas y vinos, con el cartel del almacén colgado sobre el toldo.</p>
+        </li>
+        <li class="cap" data-cap="3">
+          <figure class="cap__f"><img src="img/mesa-carta-720.webp" alt="Mesa de mármol junto a la ventana, con la carta y una vela" width="616" height="700" loading="lazy" decoding="async"></figure>
+          <span class="cap__año">Hoy</span>
+          <h3>La esquina del barrio</h3>
+          <p>Mesas de mármol, loza con guarda azul, la salsa secreta de la abuela en las albondiguitas y 4,8 en Google con más de mil reseñas. ¡Bienvenidos!</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- CARTA -->
+<section class="sec carta" id="carta" aria-labelledby="t-carta">
+  <div class="cont">
+    <header class="carta__cab">
+      <div>
+        <p class="rotulo aparece">Platitos para compartir · vermús · vinos por copa</p>
+        <h2 class="tit aparece" id="t-carta">La carta</h2>
+      </div>
+      <div class="carta__info aparece">
+        <p>Efectivo 10% de descuento · Mercado Pago y tarjetas<br>No se cobran las mesas por separado</p>
+        <a class="btn btn--linea" href="carta/"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h6v6H2zM12 2h6v6h-6zM2 12h6v6H2zM12 12h2v2h-2zM16 12h2v2h-2zM12 16h2v2h-2zM16 16h2v2h-2z"/></svg>La carta del QR</a>
+      </div>
+    </header>
+    <div class="carta__grupos" role="tablist" aria-label="Partes de la carta" data-grupos>
+      <button type="button" role="tab" class="grupo is-on" data-grupo="comer" aria-selected="true">Para comer</button>
+      <button type="button" role="tab" class="grupo" data-grupo="tomar" aria-selected="false">Vermú y tragos</button>
+      <button type="button" role="tab" class="grupo" data-grupo="vinos" aria-selected="false">Vinos</button>
+    </div>
+    <div class="carta__cuerpo">
+      <div class="carta__placa">
+        <svg class="placa-marco" aria-hidden="true"><rect width="100%" height="100%"/></svg>
+        <div id="la-carta" data-kit="carta" data-kit-pedir="false"></div>
+        <nav class="carta__pasos" aria-label="Secciones de la carta">
+          <button type="button" class="btn btn--linea" data-paso="-1">← <span>Anterior</span></button>
+          <button type="button" class="btn btn--botella" data-paso="1"><span>Siguiente</span> →</button>
+        </nav>
+      </div>
+      <figure class="carta__foto" aria-hidden="true">
+        <div class="carta__plato"><img data-foto src="img/p-provoleta-640.webp" alt="" width="640" height="800"></div>
+        <figcaption data-foto-cap>Provoleta Lombardi</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ARMÁ TU VERMÚ -->
+<section class="sec vermu" id="vermu" aria-labelledby="t-vermu">
+  <div class="cont vermu__in">
+    <header class="sec__cab">
+      <p class="rotulo rotulo--toldo aparece">Para pedir en la barra</p>
+      <h2 class="tit aparece" id="t-vermu">Armá tu <i>vermú</i></h2>
+      <p class="sec__bajada aparece">Elegí el vermú, sumale lo que va arriba y te decimos con qué platito acompañarlo.</p>
+    </header>
+    <div class="vermu__juego aparece">
+      <div class="vaso" data-vaso>
+        <svg viewBox="0 0 200 280" class="vaso__svg" aria-hidden="true">
+          <defs><clipPath id="vasoClip"><path d="M30 20 L170 20 L156 258 Q155 268 145 268 L55 268 Q45 268 44 258 Z"/></clipPath></defs>
+          <g clip-path="url(#vasoClip)">
+            <rect class="vaso__liq" x="0" y="60" width="200" height="220"/>
+            <rect class="vaso__soda" x="0" y="60" width="200" height="40"/>
+            <g class="vaso__hielo"><rect x="58" y="96" width="38" height="36" rx="6" transform="rotate(-12 77 114)"/><rect x="104" y="112" width="40" height="36" rx="6" transform="rotate(10 124 130)"/><rect x="70" y="150" width="36" height="34" rx="6" transform="rotate(6 88 167)"/></g>
+            <g class="vaso__burbujas"><circle cx="70" cy="240" r="3"/><circle cx="120" cy="250" r="2.5"/><circle cx="96" cy="230" r="2"/><circle cx="140" cy="236" r="2.5"/><circle cx="84" cy="255" r="2"/></g>
+            <g class="g g--naranja"><circle cx="138" cy="88" r="24" fill="#E8892B"/><circle cx="138" cy="88" r="18" fill="#F4A64A"/><path d="M138 70 V106 M120 88 H156 M125 75 L151 101 M151 75 L125 101" stroke="#F7D29A" stroke-width="2"/></g>
+            <g class="g g--limon"><circle cx="62" cy="86" r="20" fill="#E9D35A"/><circle cx="62" cy="86" r="15" fill="#F3E58E"/><path d="M62 71 V101 M47 86 H77" stroke="#FBF3C4" stroke-width="2"/></g>
+          </g>
+          <g class="g g--aceituna"><line x1="122" y1="0" x2="92" y2="190" stroke="#C9B48A" stroke-width="4" stroke-linecap="round"/><ellipse cx="98" cy="150" rx="13" ry="17" fill="#6B7A2A"/><circle cx="98" cy="146" r="5" fill="#B5392F"/></g>
+          <path class="vaso__borde" d="M30 20 L170 20 L156 258 Q155 268 145 268 L55 268 Q45 268 44 258 Z"/>
+          <path class="vaso__brillo" d="M48 40 L42 230"/>
+        </svg>
+      </div>
+      <div class="vermu__opc">
+        <fieldset class="opc">
+          <legend>1 · El vermú</legend>
+          <div class="chips" data-opc="vermu">
+            <button type="button" class="chip is-on" data-v="lafuerza-rojo" data-color="#6E1420" aria-pressed="true">La Fuerza rojo</button>
+            <button type="button" class="chip" data-v="lafuerza-blanco" data-color="#D9C27A" aria-pressed="false">La Fuerza blanco</button>
+            <button type="button" class="chip" data-v="feriado-rosado" data-color="#D86F75" aria-pressed="false">Feriado rosado</button>
+            <button type="button" class="chip" data-v="cinzano-segundo" data-color="#7D1D22" aria-pressed="false">Cinzano Segundo</button>
+            <button type="button" class="chip" data-v="lunfa-rosso" data-color="#5E1B1E" aria-pressed="false">Lunfa Rosso</button>
+            <button type="button" class="chip" data-v="carpano" data-color="#4A1414" aria-pressed="false">Carpano Rosso</button>
+          </div>
+        </fieldset>
+        <fieldset class="opc">
+          <legend>2 · Arriba</legend>
+          <div class="chips" data-opc="extra">
+            <button type="button" class="chip is-on" data-x="naranja" aria-pressed="true">Naranja</button>
+            <button type="button" class="chip is-on" data-x="aceituna" aria-pressed="true">Aceituna</button>
+            <button type="button" class="chip" data-x="limon" aria-pressed="false">Limón</button>
+          </div>
+        </fieldset>
+        <div class="vermu__res" aria-live="polite">
+          <p class="vermu__pedido">Pedilo así: <b data-res-nombre>La Fuerza rojo con soda, naranja y aceituna</b> <span class="vermu__precio" data-res-precio>$8.200</span></p>
+          <button type="button" class="vermu__tapa" data-res-tapa>Va bien con las <b>albondiguitas rellenas</b> <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section class="sec agenda" id="agenda" aria-labelledby="t-agenda">
+  <div class="cont">
+    <header class="sec__cab">
+      <p class="rotulo aparece">Partidos, promos y grupos</p>
+      <h2 class="tit aparece" id="t-agenda">La <i>agenda</i></h2>
+      <p class="sec__bajada aparece">Lombardi no toma reservas: se viene y se espera mesa. Salvo en estas ocasiones.</p>
+    </header>
+    <div class="tickets" data-tickets>
+      <article class="ticket aparece">
+        <div class="ticket__fecha ticket__fecha--botella"><span>Vie</span><b>13</b><span>Nov</span></div>
+        <div class="ticket__cuerpo">
+          <p class="ticket__tag">Pantalla gigante</p>
+          <h3 data-kit-destacado="evento.titulo">Argentina vs. Uruguay</h3>
+          <p data-kit-destacado="evento.detalle">Pantalla gigante, vermú, tapeos y promociones. Reservá tu mesa para el partido.</p>
+          <p class="ticket__nota">Amistoso en La Bombonera · hora a confirmar</p>
+        </div>
+        <div class="ticket__accion"><button type="button" class="btn btn--vermu" data-kit-open="reservas" data-kit-fecha="2026-11-13" data-kit-personas="4">Reservar mesa</button></div>
+      </article>
+      <article class="ticket aparece">
+        <div class="ticket__fecha ticket__fecha--toldo"><span>Mar</span><b>17</b><span>Nov</span></div>
+        <div class="ticket__cuerpo">
+          <p class="ticket__tag">Pantalla gigante</p>
+          <h3>Argentina vs. Costa Rica</h3>
+          <p>La Selección juega en Córdoba y acá lo vemos con vermú, tapeos y promociones.</p>
+          <p class="ticket__nota">Amistoso en el Kempes · hora a confirmar</p>
+        </div>
+        <div class="ticket__accion"><button type="button" class="btn btn--vermu" data-kit-open="reservas" data-kit-fecha="2026-11-17" data-kit-personas="4">Reservar mesa</button></div>
+      </article>
+      <article class="ticket aparece">
+        <div class="ticket__fecha ticket__fecha--vermu"><span>Lun</span><b>a</b><span>Jue</span></div>
+        <div class="ticket__cuerpo">
+          <p class="ticket__tag">Cumples y juntadas</p>
+          <h3>Mesa para grupos</h3>
+          <p>De 8 personas en adelante, de lunes a jueves entre las 18:00 y las 19:30 hs. Les guardamos la mesa.</p>
+        </div>
+        <div class="ticket__accion"><button type="button" class="btn btn--vermu" data-kit-open="reservas" data-kit-personas="8">Reservar grupo</button></div>
+      </article>
+      <article class="ticket aparece">
+        <div class="ticket__fecha ticket__fecha--loza"><span>Cada</span><b>Lun</b><span>18:00</span></div>
+        <div class="ticket__cuerpo">
+          <p class="ticket__tag">Sin reserva</p>
+          <h3>Lunes de vermú</h3>
+          <p>Esta semana: <b data-kit-destacado="promo.vermu">Feriado rojo y rosado</b>. <span data-kit-destacado="promo.detalle">Todos los lunes, una promo distinta de vermú.</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="sec mesa" id="mesa" aria-labelledby="t-mesa">
+  <div class="cont">
+    <header class="sec__cab">
+      <p class="rotulo aparece">Mármol, loza y copas</p>
+      <h2 class="tit aparece" id="t-mesa">La <i>mesa</i></h2>
+      <p class="sec__bajada aparece mesa__ayuda">Deslizá las fotos con el dedo.</p>
+    </header>
+    <div class="mazo" data-mazo>
+      <figure class="foto"><img src="img/g-mesa1-640.webp" srcset="img/g-mesa1-640.webp 640w, img/g-mesa1-1000.webp 1000w" sizes="(min-width:1100px) 40vw, 80vw" alt="Mesa vista desde arriba con conservas, tapeo y vermú" width="1000" height="1000" loading="lazy" decoding="async"></figure>
+      <figure class="foto"><img src="img/g-faina-640.webp" srcset="img/g-faina-640.webp 640w, img/g-faina-1000.webp 1000w" sizes="(min-width:1100px) 22vw, 80vw" alt="Fainá Castelvetere y tortilla de papa" width="1000" height="1250" loading="lazy" decoding="async"></figure>
+      <figure class="foto"><img src="img/g-vermu-640.webp" srcset="img/g-vermu-640.webp 640w, img/g-vermu-1000.webp 1000w" sizes="(min-width:1100px) 22vw, 80vw" alt="Vermú con aceituna y naranja" width="1000" height="1250" loading="lazy" decoding="async"></figure>
+      <figure class="foto"><img src="img/g-copas-640.webp" srcset="img/g-copas-640.webp 640w, img/g-copas-1000.webp 1000w" sizes="(min-width:1100px) 22vw, 80vw" alt="Copas de vino servidas en la barra" width="1000" height="1000" loading="lazy" decoding="async"></figure>
+      <figure class="foto"><img src="img/g-tortilla-640.webp" srcset="img/g-tortilla-640.webp 640w, img/g-tortilla-1000.webp 1000w" sizes="(min-width:1100px) 22vw, 80vw" alt="Tortilla de papa en la mesa con olivas y vino" width="1000" height="1250" loading="lazy" decoding="async"></figure>
+      <figure class="foto"><img src="img/g-mesa2-640.webp" srcset="img/g-mesa2-640.webp 640w, img/g-mesa2-1000.webp 1000w" sizes="(min-width:1100px) 40vw, 80vw" alt="Tapeo con quesos, jamón y conservas sobre la mesa de mármol" width="1000" height="1004" loading="lazy" decoding="async"></figure>
+      <figure class="foto"><img src="img/loza-640.webp" srcset="img/loza-640.webp 640w, img/loza-1000.webp 1000w" sizes="(min-width:1100px) 22vw, 80vw" alt="Fainá en plato de loza con guarda azul" width="1000" height="1250" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section class="sec resenas" aria-labelledby="t-resenas">
+  <div class="cont">
+    <header class="sec__cab">
+      <p class="rotulo aparece"><span class="estrellas" aria-hidden="true">★★★★★</span> 4,8 en Google · 1.100 reseñas</p>
+      <h2 class="tit aparece" id="t-resenas">Ellos ya <i>nos eligieron</i></h2>
+    </header>
+    <div class="citas" data-citas>
+      <blockquote class="cita aparece"><p>Excelente lugar! Fui varias veces ya con amigas y con familia y siempre es buena la experiencia. La comida es muy rica. Un destacado: la tortilla de papas. Es abundante. Tienen variedad de vermut para probar y otros tragos como gin tonic.</p><footer>Melina Kolyvakis</footer></blockquote>
+      <blockquote class="cita aparece"><p>El lugar es muy tranquilo y agradable, la comida excelente y la atención también, muy recomendable para ir con amigos o pareja. Y lo mejor de todo, tiene descuento pagando en efectivo!</p><footer>Jey Ruiz</footer></blockquote>
+      <blockquote class="cita aparece"><p>Cumple las expectativas. Recomiendo la tortilla y el vermú de la casa. Las gambas al ajillo son muy ricas.</p><footer>Nathally Cisneros</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO LLEGAR -->
+<section class="sec llegar" id="llegar" aria-labelledby="t-llegar">
+  <div class="cont llegar__in">
+    <div class="llegar__mapa aparece">
+      <div class="mapa" data-mapa>
+        <img src="img/copas-800.webp" srcset="img/copas-800.webp 800w, img/copas-1350.webp 1350w" sizes="(min-width:1100px) 50vw, 100vw" alt="Copas de vino rosado, blanco y tinto en la barra" width="1350" height="759" loading="lazy" decoding="async">
+        <button type="button" class="mapa__btn" data-mapa-btn>Ver el mapa</button>
+      </div>
+    </div>
+    <div class="llegar__txt">
+      <p class="rotulo aparece">Cómo llegar</p>
+      <h2 class="tit aparece" id="t-llegar">Av. Triunvirato <i>3901</i></h2>
+      <p class="llegar__barrio aparece">Villa Urquiza, CABA</p>
+      <dl class="horarios aparece">
+        <div><dt>Lunes a jueves</dt><dd>18:00 a 00:00 hs</dd></div>
+        <div><dt>Viernes y sábado</dt><dd>18:00 a 01:00 hs</dd></div>
+        <div><dt>Domingo</dt><dd>Cerrado</dd></div>
+      </dl>
+      <ul class="llegar__notas aparece">
+        <li><b>Sin reservas:</b> se viene y se espera mesa (salvo grupos y partidos).</li>
+        <li><b>Efectivo 10% off.</b> También Mercado Pago y tarjetas.</li>
+      </ul>
+      <div class="llegar__btns aparece">
+        <a class="btn btn--vermu" href="https://www.google.com/maps/search/?api=1&amp;query=Lombardi+Vermuteria+Av.+Triunvirato+3901+CABA" target="_blank" rel="noopener">Abrir en Maps</a>
+        <a class="btn btn--linea" href="https://wa.me/5491161071161" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--linea" href="https://instagram.com/lombardi.vermuteria" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="pie__toldo" aria-hidden="true"></div>
+  <div class="cont pie__in">
+    <div class="pie__marca">
+      <img src="img/logo-crema.svg" alt="Lombardi" width="1080" height="240" loading="lazy">
+      <p>Vermutería · Bar de tapas y vinos<br>Un homenaje a la abuela María.</p>
+    </div>
+    <div class="pie__col">
+      <h3>Dónde</h3>
+      <p>Av. Triunvirato 3901<br>Villa Urquiza, CABA</p>
+      <p><a href="https://wa.me/5491161071161" target="_blank" rel="noopener">WhatsApp 11-6107-1161</a><br><a href="https://instagram.com/lombardi.vermuteria" target="_blank" rel="noopener">@lombardi.vermuteria</a></p>
+    </div>
+    <div class="pie__col">
+      <h3>Cuándo</h3>
+      <p>Lun a jue 18:00 a 00:00 hs<br>Vie y sáb 18:00 a 01:00 hs<br>Domingo cerrado</p>
+    </div>
+    <div class="pie__col">
+      <h3>La casa</h3>
+      <p><a href="carta/">Carta del QR</a><br><a href="#agenda">Reservas para grupos</a><br><a href="admin/">Panel del dueño</a></p>
+    </div>
+  </div>
+  <p class="pie__credito">Sitio desarrollado por <a href="https://alejomfernandez.com.ar" target="_blank" rel="noopener">Alejo Martín Fernández</a></p>
+</footer>
+
+<script type="module" src="js/main.js?v=1"></script>
+</body>
+</html>

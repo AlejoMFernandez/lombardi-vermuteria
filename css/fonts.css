@@ -1,0 +1,5 @@
+/* Fuentes propias (self-hosted): Fraunces para títulos, Archivo (con ancho variable) para texto y rótulos */
+@font-face{font-family:'Fraunces';font-style:normal;font-display:swap;font-weight:100 900;src:url(../fonts/fraunces-latin-standard-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:italic;font-display:swap;font-weight:100 900;src:url(../fonts/fraunces-latin-standard-italic.woff2) format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-standard-normal.woff2) format('woff2')}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-standard-italic.woff2) format('woff2')}
