@@ -406,12 +406,6 @@ function soltar() {
 }
 mazo.addEventListener('pointerup', soltar); mazo.addEventListener('pointercancel', soltar);
 
-/* ---------- mapa: carga solo al tocar ---------- */
-$('[data-mapa-btn]')?.addEventListener('click', (e) => {
-  const box = $('[data-mapa]');
-  box.insertAdjacentHTML('beforeend', '<iframe title="Mapa: Lombardi, Av. Triunvirato 3901" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Lombardi+Vermuteria,+Av.+Triunvirato+3901,+CABA&output=embed"></iframe>');
-  e.currentTarget.remove();
-});
 
 const kit = await kitP;
 window.lombardi = { kit, estado };

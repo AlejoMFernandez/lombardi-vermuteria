@@ -122,8 +122,8 @@ main{display:grid;grid-template-columns:minmax(0,1fr)}
 /* ---------- la historia ---------- */
 .historia{background:var(--marmol)}
 .historia__fig{display:none}
-.capitulos{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:56px}
-.cap{display:flex;flex-direction:column;gap:10px}
+.capitulos{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:40px}
+.cap{display:flex;flex-direction:column;gap:8px}
 .cap__f{margin:0 0 10px;aspect-ratio:4/3;border-radius:4px;overflow:hidden;position:relative;box-shadow:0 0 0 2px var(--tinta),0 0 0 8px var(--papel),0 0 0 10px var(--tinta)}
 .cap__f img{width:100%;height:100%;object-fit:cover}
 .cap__f--mapa{background:var(--botella);color:var(--marmol);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:20px}
@@ -165,7 +165,9 @@ main{display:grid;grid-template-columns:minmax(0,1fr)}
 .it__th{width:58px;height:58px;border-radius:50%;padding:3px;background:radial-gradient(circle,var(--loza) 0 1.4px,transparent 1.8px) 0 0/6px 6px;cursor:zoom-in;border:0}
 .it__th img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:2px solid var(--papel)}
 .it__nom{margin:0;font:700 17px/1.3 var(--f-txt);overflow-wrap:anywhere}
-.it__nom .kit-tag{color:var(--botella);display:inline;width:auto;height:auto;margin:0}
+.it__nom .kit-tag{color:var(--botella);display:inline-grid;place-items:center;width:1em;height:1em;margin-left:6px;vertical-align:-.12em}
+.it__nom .kit-tag svg{width:100%;height:100%}
+.it__nom .kit-tag:has(.tag-sintacc),.it__nom .kit-tag:has(.tag-vegano){display:inline;width:auto;height:auto;margin:0}
 .it__desc{margin:3px 0 0;font-size:14.5px;line-height:1.45;color:var(--gris)}
 .it__pre{font:700 16px/1.3 var(--f-txt);color:var(--loza);white-space:nowrap;text-align:right}
 .it__pre small{display:block;font-weight:500;font-size:13px;color:var(--gris)}
@@ -256,16 +258,20 @@ main{display:grid;grid-template-columns:minmax(0,1fr)}
 .estrellas{color:#F2C27B;letter-spacing:.1em;margin-right:6px}
 .citas{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 calc(var(--pad)*-1);padding:4px var(--pad) 8px;scroll-padding:0 var(--pad)}
 .citas::-webkit-scrollbar{display:none}
-.cita{flex:0 0 84%;scroll-snap-align:start;margin:0;padding:26px 24px;background:var(--papel);color:var(--tinta);border-radius:4px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;position:relative}
+.cita{flex:0 0 84%;scroll-snap-align:start;margin:0;padding:34px 24px 26px;background:var(--papel);color:var(--tinta);border-radius:4px;display:flex;flex-direction:column;gap:16px;position:relative}
+.cita footer{margin-top:auto;padding-top:6px}
 .cita::before{content:"“";position:absolute;top:-14px;left:18px;font:800 80px/1 var(--f-tit);color:var(--vermu)}
 .cita p{margin:0;font:500 18px/1.5 var(--f-tit)}
+.cita__nota{display:flex;align-items:center;gap:8px;margin:0 0 -6px!important;font:700 14px/1 var(--f-txt)!important;color:var(--tinta)}
+.cita__nota .estrellas{color:#D9962B;letter-spacing:.08em;margin:0;font-size:16px}
 .cita footer{font:italic 800 13px/1 var(--f-txt);font-stretch:70%;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
 
 /* ---------- cómo llegar ---------- */
 .llegar{background:var(--marmol)}
 .llegar__in{display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
-.mapa{position:relative;aspect-ratio:4/3;border-radius:4px;overflow:hidden;box-shadow:0 0 0 2px var(--tinta),0 0 0 8px var(--papel),0 0 0 10px var(--tinta);margin:10px;background:var(--pared)}
+.mapa{position:relative;aspect-ratio:4/3;min-height:300px;border-radius:4px;overflow:hidden;box-shadow:0 0 0 2px var(--tinta),0 0 0 8px var(--papel),0 0 0 10px var(--tinta);margin:10px;background:var(--pared)}
 .mapa img,.mapa iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+/* (sin botón: el mapa carga directo) */
 .mapa__btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);min-height:48px;padding:0 22px;border-radius:999px;border:0;background:var(--botella);color:var(--marmol);font:700 16px/1 var(--f-txt);cursor:pointer;box-shadow:0 10px 30px -10px rgba(0,0,0,.6)}
 .llegar__txt{display:flex;flex-direction:column;gap:12px}
 .llegar__txt .tit{font-size:clamp(36px,8vw,72px)}
@@ -407,10 +413,10 @@ main{display:grid;grid-template-columns:minmax(0,1fr)}
   .hfig__txt--logo img{width:240px;height:auto}
   .historia__txt{padding-top:20px}
   .capitulos{gap:0}
-  .cap{min-height:62vh;justify-content:center;padding:40px 0;gap:14px;border-top:1px solid var(--linea)}
+  .cap{padding:34px 0;gap:10px;border-top:1px solid var(--linea)}
   .cap:first-child{border-top:0}
   .cap__f{display:none}
-  .cap h3{font-size:40px}
+  .cap h3{font-size:34px}
   .cap p{font-size:18px;max-width:46ch}
   .cap__año{font-size:15px}
   .js .cap{opacity:.28;transform:none;transition:opacity .6s var(--ease)}
@@ -473,7 +479,7 @@ main{display:grid;grid-template-columns:minmax(0,1fr)}
   @media (hover:hover){.mazo .foto:hover img{transform:scale(1.05)}}
 
   .citas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;overflow:visible;margin:0;padding:0}
-  .cita{padding:34px 30px}
+  .cita{padding:40px 30px 30px}
 
   .llegar__in{grid-template-columns:1.1fr 1fr;gap:96px}
 }
